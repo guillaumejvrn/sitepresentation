@@ -1,0 +1,31 @@
+obj plan de fou
+
+acceuil
+pernom nom accroche photo
+
+a propos
+
+
+competences
+decrire chaque experience
+poste
+entreprise
+date de debut
+date de formationlieu
+taches realise
+cree lien cv
+
+
+experience
+
+formation
+
+
+
+contact
+nom d'expediteur
+qdress de courielle de l'expediteur
+obj du message
+capcha
+envoie mail adress avec php
+
