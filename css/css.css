@@ -1,0 +1,38 @@
+.barre {
+    background-color: #1F203A;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+.amorce{
+    text-align: center;
+}
+.navigation{
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.navigation a{
+    color: white;
+    text-decoration: none;
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.navigation{
+    display: flex;
+    gap: 15px;
+}
+.barre h1{
+    color: white;
+}
+.topimage{
+    display: flex;
+    justify-content: center;
+}
