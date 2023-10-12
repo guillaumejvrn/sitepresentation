@@ -1,17 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
 .barre {
     background-color: #1F203A;
-    margin-top: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 8px;
 }
 body {
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
 }
-.amorce{
+.amorce p{
     text-align: center;
+    font-size: 30pt;
+}
+.amorce{
+    background-color: lightgray;
+    padding: 20px;
+    padding-top: 30px;
 }
 .navigation{
     text-decoration: none;
@@ -35,4 +46,9 @@ body {
 .topimage{
     display: flex;
     justify-content: center;
+    background-color: lightgray;
+}
+.topimage img{
+    width: 600px;
+    border-radius: 10px;
 }
