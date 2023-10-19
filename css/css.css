@@ -3,7 +3,7 @@
     padding: 0px;
     border: 0px;
 }
-.barre {
+#barre {
     background-color: #1F203A;
     display: flex;
     justify-content: space-between;
@@ -15,40 +15,60 @@ body {
     margin-right: 0px;
     margin-top: 0px;
 }
-.amorce p{
+#amorce p{
     text-align: center;
     font-size: 30pt;
 }
-.amorce{
+#amorce{
     background-color: lightgray;
     padding: 20px;
     padding-top: 30px;
 }
-.navigation{
+#navigation{
     text-decoration: none;
     border-radius: 5px;
     padding: 5px;
 }
-.navigation a{
+#navigation a{
     color: white;
     text-decoration: none;
     border: solid black 1px;
     border-radius: 5px;
     padding: 5px;
 }
-.navigation{
+#navigation{
     display: flex;
     gap: 15px;
 }
-.barre h1{
+#barre h1{
     color: white;
 }
-.topimage{
+#topimage{
     display: flex;
     justify-content: center;
     background-color: lightgray;
+    padding-bottom: 300px;
 }
-.topimage img{
+#topimage img{
     width: 600px;
     border-radius: 10px;
+}
+#apropos{
+    text-align: center;
+    size: 30px;
+    padding-bottom: 200px;
+}
+.star{
+    width: 12px;
+    height: 12px;
+}
+#compet{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+#hautcompet{
+    text-align: center;
+    padding-bottom: 100px;
 }
