@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="fr">
     <head>
-    <title>Guillaume</title>
-    <link rel="stylesheet" href="css/css.css">
+        <meta charset="UTF-8">
+        <title>Guillaume</title>
+        <link rel="stylesheet" href="css/css.css">
     </head>
     <body>
         <div id="barre">
@@ -39,7 +40,7 @@
                 <p> javascript <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"></p>
                 <p>php  <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"></p>
                 <p> mysql  <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"><img src="images/star-regular.svg" class="star"> </p>
-            </div>
+            </div> // GENERER LES ETOILES AVEC PHP !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             <div>
                 <h2>score aux certifications</h2>
                 <p>voltaire 100%</p>
@@ -74,6 +75,28 @@
             <p>caen</p>
             <p>developpeur et reseau</p>
             <a href="CV.txt"> mon CV</a>
+        </div>
+        <div>
+            <div>formulaire de contact</div>
+            <form method="post" action="mail.php">
+
+                <label for="nom"> nom de l'expediteur</label>
+                <input type="name" name="nom" required><br>
+
+                <label for="adressemail"> adresse de courriel</label>
+                <input type="email" name="adressemail" required><br>
+
+                <label for="obj">objet du message</label>
+                <input type="text" name="obj" required><br>
+
+                <label for="contenu">contenu du message</label>
+                <input type="text" name="contenu" required><br>
+
+                <p>capcha a faire</p>
+
+                <input type="submit" value="Envoyer">
+
+            </form>
         </div>
     </body>
 
