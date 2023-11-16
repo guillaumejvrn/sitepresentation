@@ -9,6 +9,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 8px;
+    position : fixed;
 }
 body {
     margin-left: 0px;

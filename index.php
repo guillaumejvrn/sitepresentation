@@ -9,10 +9,10 @@
         <div id="barre">
             <h1><b>GUILLAUME JENVRIN</b></h1>
             <div id="navigation">
-                <a href="#acceuil">acceuil</a>
+                <a href="#amorce">acceuil</a>
                 <a href="#apropos">a propos</a>
-                <a href="#competences">compétences</a>
-                <a href="#experinces">expériences</a>
+                <a href="#competencesancre">compétences</a>
+                <a href="#experiences">expériences</a>
                 <a href="#formation">formation</a>
                 <a href="#contact">contact</a>
             </div>
@@ -28,32 +28,33 @@
             <p>je m’appelle guillaume j'ai 18 ans et je suis passionné d'informatique et je souhaite continuer cette lignée</p>
             <img src="images/2499795-photo-rsized-300x250.png">
         </div>
-
-        <div id="hautcompet"><h1>Domaines : developpeur logiciel, pentester, réseau</h1>
-            <p>Items pour chaque domaine: java, cpp, html, css, javascript, php, mysql</p></div>        
-        <div id="compet">
-            <div id="item">
-                <p>java<img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"></p>
-                <p> cpp <img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"></p>
-                <p> html<img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-regular.svg" class="star"></p>
-                <p> css <img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-regular.svg" class="star"></p>
-                <p> javascript <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"></p>
-                <p>php  <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"></p>
-                <p> mysql  <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"><img src="images/star-regular.svg" class="star"> </p>
-            </div> // GENERER LES ETOILES AVEC PHP !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-            <div>
-                <h2>score aux certifications</h2>
-                <p>voltaire 100%</p>
-                <p>cisco 100%</p>
-                <p>microsoft 100%</p>
-                <p>anglais<img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"></p>
-                <p>francais<img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"></p>
-            </div>
-            </div>
+        <div id="competencesancre">
+            <div id="hautcompet"><h1>Domaines : developpeur logiciel, pentester, réseau</h1>
+                <p>Items pour chaque domaine: java, cpp, html, css, javascript, php, mysql</p></div>        
+            <div id="compet">
+                <div id="item">
+                    <p>java<img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"></p>
+                    <p> cpp <img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"></p>
+                    <p> html<img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-regular.svg" class="star"></p>
+                    <p> css <img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-regular.svg" class="star"></p>
+                    <p> javascript <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"></p>
+                    <p>php  <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"></p>
+                    <p> mysql  <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"><img src="images/star-regular.svg" class="star"> </p>
+                </div> // GENERER LES ETOILES AVEC PHP !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                <div>
+                    <h2>score aux certifications</h2>
+                    <p>voltaire 100%</p>
+                    <p>cisco 100%</p>
+                    <p>microsoft 100%</p>
+                    <p>anglais<img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"></p>
+                    <p>francais<img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"></p>
+                </div>
+                </div>
                 
+            </div>
         </div>
 
-        <div>
+        <div id="experiences">
             <div>
                 <h1>stage chez cisco</h1>
                 <p>pentester</p>
@@ -66,7 +67,7 @@
             </div>
         </div>
 
-        <div>
+        <div id="formation">
             <div> formation</div>
             <p>caen sup st ursule</p>
             <p>st ursule</p>
@@ -76,7 +77,7 @@
             <p>developpeur et reseau</p>
             <a href="CV.txt"> mon CV</a>
         </div>
-        <div>
+        <div id="contact">
             <div>formulaire de contact</div>
             <form method="post" action="mail.php">
 
