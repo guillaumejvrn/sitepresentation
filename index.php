@@ -33,14 +33,14 @@
                 <p>Items pour chaque domaine: java, cpp, html, css, javascript, php, mysql</p></div>        
             <div id="compet">
                 <div id="item">
-                    <p>java<img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"></p>
-                    <p> cpp <img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"></p>
-                    <p> html<img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-regular.svg" class="star"></p>
-                    <p> css <img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-regular.svg" class="star"></p>
-                    <p> javascript <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"></p>
-                    <p>php  <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"></p>
-                    <p> mysql  <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"> <img src="images/star-solid.svg" class="star"><img src="images/star-regular.svg" class="star"> </p>
-                </div> // GENERER LES ETOILES AVEC PHP !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    <?php
+                    require_once("yaml.yaml");
+                    $data=my_yaml_parse_file('langagedeprog');
+                    foreach($data["langagedeprog"]AS $prog){
+                        echo "<p>".ucfirst($prog["java"])." : ".$prog["cpp"]." ".$prog["html"]." ".$prog["css"]." ".$prog["javascript"]." ".$prog["php"]." ".$prog["mysql"]."</p>\n";
+                    }
+                    ?>
+                </div>
                 <div>
                     <h2>score aux certifications</h2>
                     <p>voltaire 100%</p>
@@ -61,7 +61,7 @@
                 <p>cisco</p>
                 <p>date de debut : 10/10/2020</p>
                 <p>date de fin : 10/11/2020</p>
-                <p>siege social de cisco</p>
+                <p>siège social de cisco</p>
                 <p>test d'intrusion</p>
                 <a href="CV.txt">mon CV</a>
             </div>
@@ -69,12 +69,12 @@
 
         <div id="formation">
             <div> formation</div>
-            <p>caen sup st ursule</p>
-            <p>st ursule</p>
+            <p>caen sup saint ursule</p>
+            <p>saint ursule</p>
             <p>2023</p>
             <p>2025</p>
             <p>caen</p>
-            <p>developpeur et reseau</p>
+            <p>développeur et réseau</p>
             <a href="CV.txt"> mon CV</a>
         </div>
         <div id="contact">
@@ -93,7 +93,7 @@
                 <label for="contenu">contenu du message</label>
                 <input type="text" name="contenu" required><br>
 
-                <p>capcha a faire</p>
+                <p>capcha à faire</p>
 
                 <input type="submit" value="Envoyer">
 
