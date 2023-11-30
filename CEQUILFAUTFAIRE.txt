@@ -1,0 +1,7 @@
+faire en sorte qu'il soit agreable sur tel
+
+generer tout je site en php
+
+faire un ficher yaml pour chaque categorie
+
+faire des fonction php pour separer le code html

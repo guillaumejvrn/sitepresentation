@@ -35,7 +35,7 @@
                 <div id="item">
                     <?php
                     require_once("yaml/yaml.php");
-                    $data=yaml_parse_file('yaml.yaml');
+                    $data=yaml_parse_file('ficheryaml/competences.yaml');
                     //print_array($data);
                     foreach($data AS $domaine){
                         echo "<h1>".$domaine['domaine']."</h1>";
@@ -54,15 +54,23 @@
                     ?>
                 </div>
                 <div>
-                    <h2>score aux certifications</h2>
-                    <p>voltaire 100%</p>
-                    <p>cisco 100%</p>
-                    <p>microsoft 100%</p>
 
                     <?php
-                    require_once("yaml/yaml.php");
-                    $data=yaml_parse_file('yaml.yaml');
+                    
+                    $data=yaml_parse_file('ficheryaml/competences.yaml');
                     //print_array($data);
+                    foreach($data AS $certif){
+                        echo "<h1>".$certif['certif']."</h1>";
+                        foreach($certif["score"] AS $score=> $niveau){
+                            echo "<p>".$score." ".$niveau." %";
+                            echo "</p>";
+                        }
+                    }
+                    
+                    ?>
+
+                    <?php
+                    $data=yaml_parse_file('ficheryaml/competences.yaml');
                     foreach($data AS $langages){
                         echo "<h1>".$langages['langages']."</h1>";
                         foreach($langages["langues"] AS $langues=> $niveau){

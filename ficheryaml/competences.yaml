@@ -13,3 +13,9 @@
     anglais: 5
     francais: 5
     russe: 3
+
+- certif: "score aux certifications"
+  score:
+    voltaire: 100
+    cisco: 100
+    microsoft: 100
