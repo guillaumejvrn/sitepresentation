@@ -36,7 +36,7 @@
                     <?php
                     require_once("yaml/yaml.php");
                     $data=yaml_parse_file('yaml.yaml');
-                    print_array($data);
+                    //print_array($data);
                     foreach($data AS $domaine){
                         echo "<h1>".$domaine['domaine']."</h1>";
                         foreach($domaine["competences"] AS $competence=> $niveau){
@@ -50,7 +50,6 @@
                             }
                             echo "</p>";
                         }
-                        //echo "<p>".ucfirst($prog["java"])." : ".$prog["cpp"]." ".$prog["html"]." ".$prog["css"]." ".$prog["javascript"]." ".$prog["php"]." ".$prog["mysql"]."</p>\n";
                     }
                     ?>
                 </div>
@@ -59,8 +58,26 @@
                     <p>voltaire 100%</p>
                     <p>cisco 100%</p>
                     <p>microsoft 100%</p>
-                    <p>anglais<img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"></p>
-                    <p>francais<img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"><img src="images/star-solid.svg" class="star"></p>
+
+                    <?php
+                    require_once("yaml/yaml.php");
+                    $data=yaml_parse_file('yaml.yaml');
+                    //print_array($data);
+                    foreach($data AS $langages){
+                        echo "<h1>".$langages['langages']."</h1>";
+                        foreach($langages["langues"] AS $langues=> $niveau){
+                            echo "<p>".$langues;
+                            $star = "solid";
+                            for($i=1; $i < 6 ;$i++){
+                                echo '<img src="images/star-'.$star.'.svg" class="star">';
+                                if($i >= $niveau){
+                                    $star ="regular";
+                                }
+                            }
+                            echo "</p>";
+                        }
+                    }
+                    ?>
                 </div>
                 </div>
                 
@@ -81,13 +98,11 @@
         </div>
 
         <div id="formation">
-            <div> formation</div>
-            <p>caen sup saint ursule</p>
-            <p>saint ursule</p>
-            <p>2023</p>
-            <p>2025</p>
-            <p>caen</p>
-            <p>développeur et réseau</p>
+            <h1> formation</h1>
+            <p class="caensup">caen sup saint ursule</p>
+            <p>saint ursule 2023 - 2025</p>
+            <p class="caensup">caen</p>
+            <p class="caensup">développeur et réseau</p>
             <a href="CV.txt"> mon CV</a>
         </div>
         <div id="contact">

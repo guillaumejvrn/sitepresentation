@@ -7,3 +7,9 @@
     javascript: 4
     php: 4
     mysql: 3
+  
+- langages: "langues"
+  langues:
+    anglais: 5
+    francais: 5
+    russe: 3

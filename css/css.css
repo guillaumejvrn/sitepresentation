@@ -78,3 +78,20 @@ input {
     border: solid black 1px;
     border-radius: 3px;
 }
+#experiences {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+#formation {
+    text-align: center;
+    padding-bottom: 100px;
+}
+#contact {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+.caensup{
+    padding-bottom: 10px;
+}
