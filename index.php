@@ -113,6 +113,13 @@
             <p class="caensup">développeur et réseau</p>
             <a href="CV.txt"> mon CV</a>
         </div>
+
+        <?php
+
+        include('formation.php');
+
+        ?>
+
         <div id="contact">
             <div>formulaire de contact</div>
             <form method="post" action="mail.php">
