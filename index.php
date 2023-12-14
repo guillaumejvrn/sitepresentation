@@ -9,7 +9,7 @@
         <div id="barre">
             <h1><b>GUILLAUME JENVRIN</b></h1>
             <div id="navigation">
-                <a href="#amorce">acceuil</a>
+                <a href="#amorce">accueil</a>
                 <a href="#apropos">a propos</a>
                 <a href="#competencesancre">compétences</a>
                 <a href="#experiences">expériences</a>
@@ -135,6 +135,11 @@
 
             </form>
         </div>
+        <?php
+
+        
+
+        ?>
     </body>
 
 </html>
