@@ -5,3 +5,7 @@ generer tout je site en php
 faire un ficher yaml pour chaque categorie
 
 faire des fonction php pour separer le code html
+
+pas mentir dans le cv 
+
+mettre une theme sombre avec un beau bouton pour les yeux
