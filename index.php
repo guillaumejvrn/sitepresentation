@@ -62,6 +62,9 @@
                 <p>test d'intrusion</p>
                 <a href="CV.txt">mon CV</a>
             </div>
+            <?php
+            include('ficherphp/stage.php')
+            ?>
         </div>
 
         <div id="formation">

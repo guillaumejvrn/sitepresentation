@@ -1,0 +1,8 @@
+- stage: "entreprise de réseau informatique"
+  stages:
+    observation: observation
+    entreprise: ovh 
+    date de debut: 10.10.2020
+    date de fin: 10.11.2020
+    lieu: caen
+    actions: sysadmin
