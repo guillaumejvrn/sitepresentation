@@ -1,17 +1,10 @@
 faire en sorte qu'il soit agreable sur tel
 
-generer presque tout je site en php
+php maileur https://slamwiki2.kobject.net/web/php/mail
 
-mettre une theme sombre avec un beau bouton pour les yeux
+nettoyer des dependance et fichier inutile sur github
 
 capcha
-
-
-
-
-
-
-
 
 
 
