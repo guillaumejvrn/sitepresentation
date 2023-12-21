@@ -1,11 +1,101 @@
 faire en sorte qu'il soit agreable sur tel
 
-generer tout je site en php
-
-faire des fonction php pour separer le code html
+generer presque tout je site en php
 
 mettre une theme sombre avec un beau bouton pour les yeux
 
-experience et formation en yaml
-
 capcha
+
+
+
+
+
+
+
+
+
+
+
+Intégrer un reCAPTCHA de Google dans un site web HTML nécessite l'utilisation de la bibliothèque reCAPTCHA de Google. Voici comment vous pouvez le faire étape par étape :
+
+**1. Obtenez les clés reCAPTCHA :**
+
+Allez sur le site de reCAPTCHA de Google à l'adresse : [https://www.google.com/recaptcha](https://www.google.com/recaptcha) et suivez les instructions pour créer un nouveau site. Vous obtiendrez une clé publique (site key) et une clé secrète (secret key).
+
+**2. Ajoutez le script reCAPTCHA à votre page HTML :**
+
+Ajoutez le script reCAPTCHA à l'intérieur de la balise `<head>` de votre page HTML. Assurez-vous de remplacer `VOTRE_CLE_PUBLIQUE` par la clé publique que vous avez obtenue.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre Site</title>
+    <!-- Ajoutez le script reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <!-- Le reste du contenu de votre page -->
+</body>
+</html>
+```
+
+**3. Ajoutez le widget reCAPTCHA à votre formulaire :**
+
+Ajoutez l'attribut `data-sitekey` à l'endroit où vous souhaitez afficher le reCAPTCHA sur votre formulaire. Cela devrait être fait à l'intérieur de la balise `<form>`. Assurez-vous de remplacer `VOTRE_CLE_PUBLIQUE` par votre propre clé publique.
+
+```html
+<form action="traitement.php" method="post">
+    <!-- Vos autres champs de formulaire ici -->
+    
+    <!-- Ajoutez le widget reCAPTCHA ici -->
+    <div class="g-recaptcha" data-sitekey="VOTRE_CLE_PUBLIQUE"></div>
+    
+    <button type="submit">Envoyer</button>
+</form>
+```
+
+**4. Vérifiez la réponse reCAPTCHA côté serveur :**
+
+Lorsque le formulaire est soumis, vous devez vérifier la réponse reCAPTCHA côté serveur. Cela se fait généralement dans le script de traitement du formulaire. Utilisez la clé secrète que vous avez obtenue pour effectuer cette vérification.
+
+Voici un exemple simple en PHP :
+
+```php
+<?php
+$recaptchaSecretKey = "VOTRE_CLE_SECRETE";
+$response = $_POST['g-recaptcha-response'];
+
+$apiUrl = "https://www.google.com/recaptcha/api/siteverify";
+$apiData = [
+    'secret'   => $recaptchaSecretKey,
+    'response' => $response
+];
+
+$options = [
+    'http' => [
+        'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+        'method'  => 'POST',
+        'content' => http_build_query($apiData)
+    ]
+];
+
+$context = stream_context_create($options);
+$result = file_get_contents($apiUrl, false, $context);
+$verification = json_decode($result, true);
+
+if ($verification['success']) {
+    // Le reCAPTCHA est valide, traitez le reste du formulaire ici
+    echo "reCAPTCHA validé !";
+} else {
+    // Le reCAPTCHA n'est pas valide, affichez un message d'erreur
+    echo "Échec de validation du reCAPTCHA.";
+}
+?>
+```
+
+Assurez-vous de remplacer `VOTRE_CLE_SECRETE` par votre propre clé secrète.
+
+Notez que le code ci-dessus est un exemple et peut nécessiter des ajustements en fonction de votre environnement et de la manière dont vous traitez les formulaires sur votre site.

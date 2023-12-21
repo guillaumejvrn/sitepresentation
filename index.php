@@ -101,6 +101,10 @@
         
 
         ?>
+        <footer>
+            <p>ce site respecte entierement le RGPD!!!</p>
+        </footer>
     </body>
+
 
 </html>
