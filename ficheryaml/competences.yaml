@@ -2,20 +2,10 @@
   competences:
     java: 5
     cpp: 5
+    sfmlcpp: 4
+    vulkanapi: 4
     html: 5
     css: 5
     javascript: 4
     php: 4
     mysql: 3
-  
-- langages: "langues"
-  langues:
-    anglais: 5
-    francais: 5
-    russe: 3
-
-- certif: "score aux certifications"
-  score:
-    voltaire: 100
-    cisco: 100
-    microsoft: 100

@@ -1,5 +1,4 @@
 <?php
-function item(){
     require_once("yaml/yaml.php");
     $data=yaml_parse_file('ficheryaml/competences.yaml');
     //print_array($data);
@@ -16,6 +15,5 @@ function item(){
         }
         echo "</p>";
     }
-}
 }
 ?>

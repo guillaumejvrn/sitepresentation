@@ -1,0 +1,6 @@
+
+- certif: "score aux certifications"
+  score:
+    voltaire: 80
+    cisco: 95
+    microsoft: 86
