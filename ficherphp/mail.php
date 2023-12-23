@@ -25,14 +25,7 @@ $options = [
 $context = stream_context_create($options);
 $response = file_get_contents($apiUrl, false, $context);
 
-$result = json_decode($response, true);
-
-if ($result['success']) {
-    echo "CAPTCHA est bon";
-} else {
-    echo "le CAPTCHA est pas bon";
-}
-
+//$result
  
 if(!empty($_POST)) {
  

@@ -4,8 +4,8 @@
     border: 0px;
 }
 #barre {
-    background-color: #1F203A;
     display: flex;
+    background-color: #85929E;
     justify-content: space-between;
     align-items: center;
     padding: 8px;
@@ -23,7 +23,6 @@ body {
     font-size: 30pt;
 }
 #amorce{
-    background-color: lightgray;
     padding: 20px;
     padding-top: 70px;
 }
@@ -33,7 +32,7 @@ body {
     padding: 5px;
 }
 #navigation a{
-    color: white;
+    color: black;
     text-decoration: none;
     border: solid black 1px;
     border-radius: 5px;
@@ -44,11 +43,10 @@ body {
     gap: 15px;
 }
 #barre h1{
-    color: white;
+    color: black;
 }
 #topimage{
     text-align: center;
-    background-color: lightgray;
     padding-bottom: 300px;
 }
 #topimage img{
@@ -56,9 +54,10 @@ body {
     border-radius: 10px;
 }
 #apropos{
+    padding-top: 100px;
     text-align: center;
-    size: 30px;
-    padding-bottom: 200px;
+    resize: 30px;
+    padding-bottom: 1000px;
 }
 .star{
     width: 12px;
@@ -71,6 +70,7 @@ body {
     padding-bottom: 20px;
 }
 #hautcompet{
+    padding-top: 100px;
     text-align: center;
     padding-bottom: 100px;
 }
@@ -79,21 +79,21 @@ input {
     border-radius: 3px;
 }
 #experiences {
+    padding-top: 100px;
     display: flex;
     justify-content: center;
-    padding-bottom: 100px;
+    padding-bottom: 1000px;
 }
 #formation {
+    padding-top: 100px;
     text-align: center;
-    padding-bottom: 100px;
+    padding-bottom: 1000px;
 }
 #contact {
+    padding-top: 100px;
     display: flex;
     justify-content: center;
-    padding-bottom: 100px;
-}
-.caensup{
-    padding-bottom: 10px;
+    padding-bottom: 300px;
 }
 html {
     scroll-behavior: smooth;

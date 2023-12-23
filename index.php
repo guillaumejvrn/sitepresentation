@@ -9,6 +9,9 @@
     <body>
         <div id="barre">
             <h1><b>GUILLAUME JENVRIN</b></h1>
+            <?php
+            //barre de navigation
+            ?>
             <div id="navigation">
                 <a href="#amorce">accueil</a>
                 <a href="#apropos">a propos</a>
@@ -28,6 +31,9 @@
             <p>SIO slam</p>
             <p>je m’appelle guillaume j'ai 18 ans et je suis passionné d'informatique et je souhaite en faire mon métier</p>
             <img src="images/2499795-photo-rsized-300x250.png">
+            <?php
+            //description
+            ?>
         </div>
         <div id="competencesancre">
             <div id="hautcompet"><h1>Domaines : developpeur logiciel, cybersécurité, réseau</h1>
@@ -57,6 +63,9 @@
             include('ficherphp/stage.php')
             ?>
         </div>
+        <?php
+        //formation et contact
+        ?>
 
         <div id="formation">
             <h1> formation</h1>
@@ -94,13 +103,13 @@
     <?php
     
     include('ficherphp/mail.php');
-    
+    //footer
     ?>
-    </form>
-        <footer>
-            <p>ce site est en vigueur a la loi et notamment au RGPD</p>
-        </footer>
     </body>
+
+    <footer>
+        <p>ce site est en vigueur a la loi et notamment au RGPD</p>
+    </footer>
 
 
 </html>
