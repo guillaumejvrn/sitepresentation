@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Guillaume</title>
         <link rel="stylesheet" href="css/css.css">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </head>
     <body>
         <div id="barre">
@@ -52,16 +53,6 @@
         </div>
 
         <div id="experiences">
-            <div>
-                <h1>stage chez cisco</h1>
-                <p>pentester</p>
-                <p>cisco</p>
-                <p>date de debut : 10/10/2020</p>
-                <p>date de fin : 10/11/2020</p>
-                <p>siège social de cisco</p>
-                <p>test d'intrusion</p>
-                <a href="CV.txt">mon CV</a>
-            </div>
             <?php
             include('ficherphp/stage.php')
             ?>
@@ -73,39 +64,41 @@
             <p>saint ursule 2023 - 2025</p>
             <p class="caensup">caen</p>
             <p class="caensup">développeur et réseau</p>
-            <a href="CV.txt"> mon CV</a>
+            <a href="CV/CVguillaumejenvrin.pdf"> mon CV</a>
         </div>
 
 
         <div id="contact">
             <div>formulaire de contact</div>
-            <form method="post" action="mail.php">
+            <form method="post" action="fichermail.php">
 
                 <label for="nom"> nom de l'expediteur</label>
                 <input type="name" name="nom" required><br>
 
-                <label for="adressemail"> adresse de courriel</label>
-                <input type="email" name="adressemail" required><br>
+                <label for="to"> adresse de courriel</label>
+                <input type="email" name="to" value="votre_adresse@mail.com" required><br>
 
-                <label for="obj">objet du message</label>
-                <input type="text" name="obj" required><br>
+                <label for="subject">objet du message</label>
+                <input type="text" name="subject" required><br>
 
-                <label for="contenu">contenu du message</label>
-                <input type="text" name="contenu" required><br>
+                <p>contenu du message</p>
+                <textarea name="body"></textarea><br>
 
-                <p>capcha à faire</p>
+                <div class="g-recaptcha" data-sitekey="6LcBiDopAAAAABTPKyl-ul_xOZWkXVZydp803omz"></div>
 
                 <input type="submit" value="Envoyer">
 
             </form>
         </div>
-        <?php
 
-        
-
-        ?>
+    <?php
+    
+    include('ficherphp/mail.php');
+    
+    ?>
+    </form>
         <footer>
-            <p>ce site respecte entierement le RGPD!!!</p>
+            <p>ce site est en vigueur a la loi et notamment au RGPD</p>
         </footer>
     </body>
 

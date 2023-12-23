@@ -5,8 +5,8 @@ $data=yaml_parse_file('ficheryaml/stage.yaml');
 foreach($data AS $certif){
     echo "<h1>".$certif['stage']."</h1>";
     foreach($certif["stages"] AS $score=> $niveau){
-        echo "<p>".$score." ".$niveau."<br>";
-        echo "</p>";
+        echo "<p>".$score." ".$niveau;
+        echo "</p><br>";
     }
 }
 
