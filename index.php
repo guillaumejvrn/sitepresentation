@@ -93,7 +93,7 @@
                 <p>contenu du message</p>
                 <textarea name="body"></textarea><br>
 
-                <div class="g-recaptcha" data-sitekey="6LcBiDopAAAAABTPKyl-ul_xOZWkXVZydp803omz"></div>
+                <div class="g-recaptcha" data-sitekey="6LfksjopAAAAABobtwrBfAY-FD0L0lH7izKElUga"></div>
 
                 <input type="submit" value="Envoyer">
 
