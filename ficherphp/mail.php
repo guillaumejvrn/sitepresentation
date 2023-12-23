@@ -6,7 +6,7 @@ use \PHPMailer\PHPMailer\SMTP;
 ?>
 <?php
 
-$secretKey = "6LcBiDopAAAAAD0ud0umteGP9XXYEkXKTgTO6Ajx";
+$secretKey = "6LfksjopAAAAAKRCzJSlmeBPDs_55do0m_NB1S9H";
 $recaptchaResponse = $_POST['g-recaptcha-response'];
 $apiUrl = "https://www.google.com/recaptcha/api/siteverify";
 $data = [
