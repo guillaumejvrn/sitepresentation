@@ -1,3 +1,0 @@
-nettoyer des dependance et fichier inutile sur github
-
-capcha ET VRAIMENT TOUJOURS
