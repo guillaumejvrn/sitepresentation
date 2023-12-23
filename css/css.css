@@ -80,8 +80,7 @@ input {
 }
 #experiences {
     padding-top: 100px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     padding-bottom: 1000px;
 }
 #formation {
